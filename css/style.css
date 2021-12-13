@@ -79,22 +79,17 @@ h6 {
 	color: #34547a;
 }
 
-@keyframes logo{
-	to{
-		transform: scaleX(30);
-	}
-}
 
 .logo {
 	font-family: 'Revalia', cursive;
 	font-size: 48px;
 	line-height: 60px;
 	color: #34547a;
+	transition: .3s;
 }
 
 .logo:hover{
-	animation: rgb;
-	animation-duration: 1s;
+	transform:translateY(-5px) scale(1.1);
 }
 
 .navigation {
@@ -109,6 +104,12 @@ h6 {
 	letter-spacing: 0.1em;
 	color: #000;
 	transition: all .3s;
+}
+
+.nav__item:hover{
+	text-decoration: underline;
+	transform: translateY(-5px);
+	color:rgb(85, 83, 83);
 }
 
 .section__hero {
@@ -148,12 +149,24 @@ h6 {
 	cursor: pointer;
 	outline: none;
 	border: none;
+	transition: .3s;
 }
+
+.button:active{
+	transform: scale(.9);
+	transition-duration: 0.2s;
+}
+
 
 .button--primary {
 	color: #fff;
 	background: #34547a;
 	transition: .3s;
+}
+
+.button--primary:hover{
+	color: #34547a;
+	background-color: #fff;
 }
 
 .button:hover{
@@ -444,6 +457,14 @@ h6 {
 
 .footer__social-link:last-child {
 	margin-right: 0;
+}
+
+.footer__social-img{
+	transition: .3s;
+}
+
+.footer__social-img:hover{
+	transform: translateY(-5px) scale(1.1);
 }
 
 
